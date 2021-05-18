@@ -3,33 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>LemonBrass Music</title>
   <link rel="stylesheet" href="./landing.css" />
 </head>
-<body>
-  <div id="page-wrapper">
-    <header id="header">
-      <div class="logo">
-        <img
-          id="header-img"
-          src="#"
-          alt="logo"
-        />
-      </div>
 
-      <nav id="nav-bar">
-        <ul>
-          <li><a class="nav-link" href="#features">Características</a></li>
-          <li><a class="nav-link" href="#how-it-works">Cómo funciona</a></li>
-          <li><a class="nav-link" href="#pricing">Precios</a></li>
-        </ul>
-      </nav>
+<body>
+    <header id="header" class="header" >
+      <div class="nav">        
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Musical-logo-by-yahyaanasatokillah-580x387.jpg"
+            alt="logo"
+            class='img'
+          />
+        </div>
+
+        <nav id="nav-bar">
+          <ul class="itemnav">
+            <li><a class="nav-link" href="#features">Características</a></li>
+            <li><a class="nav-link" href="#how-it-works">Cómo funciona</a></li>
+            <li><a class="nav-link" href="#pricing">Precios</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <div class="container"></div>
-
-    <section id="hero">
-      <h2>Lemon Brass </h2>
+    <section id="hero" class="hero" >
+      <h2> Fundamentos de Tuba o Trombón </h2>
+      <p> ¿Quieres iniciarte en el camino de tocar instrumentos de bronce? </p>
+      <p> Descarga nuestro ebook y podrás comenzar a tener resultados muy pronto junto a tu instrumento </p>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input
           name="email"
@@ -38,18 +41,19 @@
           placeholder="Ingresa tu correo"
           required
         />
-        <input id="submit" type="submit" value="Get Started" class="btn" />
+        <input id="submit" type="submit" value="Accede al ebook" class="btn" />
       </form>
     </section>
 
     <div class="container">
-      <section id="features">
+      <section id="features" class="features">
+        <h2 class="caracteristicas"> Características </h2>
         <div class="grid">
           <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
           <div class="desc">
             <h2>Hecho con el mejor material</h2>
             <p>
-              Nuestras tubas son hechas con la mejor aleación de bronce para obtener un sonido profundo y brillante.
+              Nuestras tubas y trombones son hechas con la mejor aleación de bronce para obtener un sonido profundo y brillante.
             </p>
           </div>
         </div>
@@ -58,7 +62,7 @@
           <div class="desc">
             <h2>Envío rápido</h2>
             <p>
-              Una vez terminada su tuba, será enviada a su domicilio en su estuche duro y con todos los cuidados durante el transporte.
+              Una vez terminado su producto, será enviado directamente a su domicilio en su estuche duro antigolpes.
             </p>
           </div>
         </div>
@@ -69,12 +73,15 @@
           <div class="desc">
             <h2>Aseguramiento de Calidad</h2>
             <p>
-              Por cada instrumento fabricado, lo sometemos a estrictos controles de calidad en relación a su estructura física y a su entonación.
+              Sometemos cada instrumento fabricado a estrictos controles de calidad en relación a su estructura física y a su entonación.
             </p>
           </div>
         </div>
       </section>
-      <section id="how-it-works">
+
+      <section id="how-it-works" class="comofunciona">
+        <h2>Como Funciona</h2>
+        <p>Qué mejor ejemplo que una demostración!</p>
         <iframe
           id="video"
           height="315"
@@ -84,54 +91,63 @@
         >        
         </iframe>
       </section>
-      <section id="pricing">
+
+      <section id="pricing" class="pricing">
+        <h2> Precios </h2>
         <div class="product" id="tenor">
-          <img src="schiller_5valvecomptuba.jpg" />
-          <div class="level">Tuba de 3 pistones</div>
-          <h2>$600</h2>
+          <div>
+            <img src="schiller_5valvecomptuba.jpg" class="instrumento" />
+            <div class="level">Tuba de 3 pistones</div>
+            <h2>CLP$1000000</h2>            
+            <button class="btn">La quiero</button>
+          </div>
           <ol>
-            <li>Ideal para estudiantes.</li>
-            <li>Lorem ipsum.</li>
-            <li>Lorem ipsum dolor.</li>
-            <li>Lorem ipsum.</li>
+            <li>Ideal para estudiantes de nivel principiante</li>
+            <li>Instrumento de 3 válvulas</li>
+            <li>Material de autoestudio incluido</li>
+            <li>Descuento 10% por compras al por mayor</li>
           </ol>
-          <button class="btn">La quiero</button>
         </div>
+
         <div class="product" id="bass">
-          <img src="schiller_5valvecomptuba.jpg" />
-          <div class="level">Tuba con 4 válvulas</div>
-          <h2>$900</h2>
+          <div>
+            <img src="schiller_5valvecomptuba.jpg" class="instrumento" />
+            <div class="level">Tuba con 4 válvulas</div>
+            <h2>CLP$1500000</h2>            
+            <button class="btn">La quiero</button>
+          </div>
           <ol>
             <li>Ideal para estudiantes de nivel intermedio.</li>
             <li>Fácil transición entre tonos.</li>
-            <li>Lorem ipsum dolor.</li>
-            <li>Lorem ipsum.</li>
+            <li>Ideal para todo género musical.</li>
+            <li>Descuento 10% por compras al por mayor</li>
           </ol>
-          <button class="btn">La quiero</button>
         </div>
+
         <div class="product" id="valve">
-          <img src="schiller_5valvecomptuba.jpg" />
-          <div class="level">Tuba Compensada de 5 pistones</div>
-          <h2>$1200</h2>
+          <div>            
+            <img src="schiller_5valvecomptuba.jpg" class="instrumento" />
+            <div class="level">Tuba de 5 pistones</div>
+            <h2>CLP$2400000</h2>
+            <button class="btn">La quiero</button>
+          </div>
           <ol>
             <li>Ideal para profesionales</li>
             <li>Ideal para todo género musical</li>
             <li>Gran entonación para sonidos ultragraves</li>
-            <li>Lorem ipsum.</li>
+            <li>Grabación de su distintivo en el metal </li>
           </ol>
-          <button class="btn">La quiero</button>
         </div>
       </section>
-      <footer>
-        <ul>
-          <li><a href="#">Privacidad</a></li>
-          <li><a href="#">Términos y Condiciones</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
+
+      <footer class="footer">
         <span>Lemon Brass, 2020 </span>
+        <ul class="footernav">
+          <li><a href="#">Términos y Condiciones</a></li>
+        </ul>
       </footer>
     </div>
-  </div>
 
+<script src="bundle.js"></script>
 </body>
 </html>
